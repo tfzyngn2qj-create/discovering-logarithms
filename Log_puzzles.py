@@ -4,7 +4,7 @@ import math
 st.set_page_config(page_title="Discovering Logarithms", page_icon="🧩")
 
 st.title("Discovering Logarithms")
-st.subheader("The Missing Exponent Puzzle by Mac Murray")
+st.subheader("The Missing Exponent Puzzle- by Mac Murray")
 
 if "step" not in st.session_state:
     st.session_state.step = 0
@@ -154,7 +154,7 @@ We know:
         """
 So the missing exponent is not 4 and it is not 5.
 
-It must be somewhere between 4 and 5.
+It must be somewhere between 4 and 5, because 20 is somewhere between 16 and 32.
 
 Instead of guessing forever, mathematicians gave this missing exponent a name.
 """
@@ -241,7 +241,7 @@ A logarithm is just the answer to a missing-exponent question.
     st.markdown("means:")
     st.latex(r"b^x=a")
 
-    st.success("So logarithms and exponents are two ways of saying the same relationship.")
+    st.success("So logarithms and exponents are two ways of saying the same relationship, just like addition and subtraction, or multiplication and division.")
 
     st.button("Revisit the mystery", on_click=next_step)
 
